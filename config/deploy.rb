@@ -21,7 +21,7 @@ default_run_options[:pty] = true
 
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
-after "deploy:update_code", "deploy:symlink_database"
+after "deploy:finalize_update", "deploy:symlink_database"
 
 namespace :deploy do
   desc "Symlink database.yml"
