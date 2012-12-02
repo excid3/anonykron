@@ -2,9 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 gem 'mysql2'
+gem "sqlite3", group: :development
 gem "twitter-bootstrap-rails", "~> 2.1.6"
 gem "friendly_id", "~> 4.0.9"
 gem "html-pipeline", "~> 0.0.4"
+gem 'rails_admin'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,3 +38,6 @@ gem 'capistrano', group: :development
 
 # To use debugger
 # gem 'debugger'
+
+
+gem "devise"

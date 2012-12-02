@@ -50,11 +50,6 @@
           <div class="span3">
             <div class="well sidebar-nav">
               <h3>Sidebar</h3>
-              <div><%= link_to "New Post", new_post_path, class: "btn btn-block" %></div>
-              <% if @post && @post.persisted? %>
-                <div><%= link_to "Edit", edit_post_path(@post), class: "btn btn-block" %></div>
-                <div><%= link_to "Delete", post_path(@post), method: :delete, class: "btn btn-block btn-danger" %></div>
-              <% end %>
             </div><!--/.well -->
           </div><!--/span-->
         </div><!--/row-->
