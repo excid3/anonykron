@@ -32,7 +32,7 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano', group: :development
 
 # To use debugger
 # gem 'debugger'
