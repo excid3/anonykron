@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-gem 'sqlite3'
+gem 'mysql2'
 gem "twitter-bootstrap-rails", "~> 2.1.6"
 gem "friendly_id", "~> 4.0.9"
 gem "html-pipeline", "~> 0.0.4"
@@ -32,7 +32,7 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
