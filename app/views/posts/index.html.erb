@@ -3,7 +3,7 @@
     <div class="page-header">
       <h1>
         <%= link_to post.title, post %>
-        <small class="pull-right">Posted <%= post.created_at.strftime("%B %d, %Y") %></small>
+        <small class="pull-right"><%= post.created_at.strftime("%B %d, %Y") %></small>
       </h1>
     </div>
 
