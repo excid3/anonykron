@@ -46,6 +46,7 @@
 @linkColor: #ffc757;
 @linkColorHover: #ffe761;
 
+.inline { display: inline; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -53,7 +54,7 @@ body {
 
 @media (min-width: 980px) {
   body {
-    margin-top: 100px;
+    margin-top: 140px;
   }
 }
 
@@ -70,12 +71,18 @@ body {
 .navbar .brand {
   font-size: 36px;
   font-weight: bold;
+  line-height: 30px;
 
   span {
     &.red { color: #980300; }
     &.yellow { color: #f9f900; }
     &.green { color: #4d9b00; }
     &.orange { color: #d26600; }
+  }
+
+  small {
+    font-weight: 200;
+    font-size: 55%;
   }
 }
 
