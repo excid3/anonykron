@@ -48,7 +48,7 @@
           </div>
           <div class="span3">
             <div class="well sidebar-nav">
-              <h3>Sidebar</h3>
+              <%= format_body Option.find_by_name("sidebar").try(:value) %>
             </div><!--/.well -->
           </div><!--/span-->
         </div><!--/row-->

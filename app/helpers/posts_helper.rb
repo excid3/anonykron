@@ -1,10 +1,10 @@
 module PostsHelper
-  def post_body(post)
+  def format_body(body)
     pipeline = HTML::Pipeline.new [
       HTML::Pipeline::MarkdownFilter,
       HTML::Pipeline::SyntaxHighlightFilter,
       HTML::Pipeline::AutolinkFilter
     ]
-    pipeline.call(post.body)[:output].html_safe
+    pipeline.call(body)[:output].html_safe
   end
 end
