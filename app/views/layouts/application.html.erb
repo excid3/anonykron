@@ -45,6 +45,7 @@
           <div class="span9">
             <%= yield %>
           </div>
+
           <div class="span3">
             <div class="well sidebar-nav">
               <%= format_body Option.find_by_name("sidebar").try(:value) %>
